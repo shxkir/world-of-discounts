@@ -150,7 +150,12 @@ export function CategoryRibbon() {
             aria-hidden={index >= categories.length}
           >
             <span className="font-mono text-[0.62rem]">0{(index % categories.length) + 1}</span>
-            <Mark name={category.icon} className="absolute top-11 left-[55px] h-20 w-20" />
+            {category.image ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={category.image} alt="" className="absolute top-10 left-1/2 h-20 w-20 -translate-x-1/2 object-contain" />
+            ) : (
+              <Mark name={category.icon} className="absolute top-11 left-[55px] h-20 w-20" />
+            )}
             <h3 className="absolute bottom-3 left-4 m-0 max-w-[130px] text-[1.25rem] leading-none tracking-[-0.06em]">
               {category.name}
             </h3>

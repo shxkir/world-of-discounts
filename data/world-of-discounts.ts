@@ -18,6 +18,7 @@ export type Category = {
   blurb: string;
   color: string;
   icon: IconName;
+  image: string;
 };
 
 export type Product = {
@@ -117,6 +118,7 @@ export const worldOfDiscounts = {
       blurb: "Everyday cupboard fills.",
       color: "#ffd84d",
       icon: "jar",
+      image: "/products/wod-pantry.webp",
     },
     {
       slug: "snacks",
@@ -125,6 +127,7 @@ export const worldOfDiscounts = {
       blurb: "Quick bites for the road.",
       color: "#ff7a66",
       icon: "chip",
+      image: "/products/wod-snacks.webp",
     },
     {
       slug: "drinks",
@@ -133,6 +136,7 @@ export const worldOfDiscounts = {
       blurb: "Cold, fizzy and everyday.",
       color: "#7ad7e5",
       icon: "bottle",
+      image: "/products/wod-drink.webp",
     },
     {
       slug: "confectionery",
@@ -141,6 +145,7 @@ export const worldOfDiscounts = {
       blurb: "A little something extra.",
       color: "#cc9af2",
       icon: "candy",
+      image: "/products/wod-chocolate.webp",
     },
     {
       slug: "household",
@@ -149,6 +154,7 @@ export const worldOfDiscounts = {
       blurb: "Keep the house running.",
       color: "#a6dc80",
       icon: "sparkle",
+      image: "/products/wod-clean.webp",
     },
     {
       slug: "personal-care",
@@ -157,6 +163,7 @@ export const worldOfDiscounts = {
       blurb: "Daily care, close to home.",
       color: "#ffb1cc",
       icon: "care",
+      image: "/products/wod-care.webp",
     },
     {
       slug: "frozen",
@@ -165,6 +172,7 @@ export const worldOfDiscounts = {
       blurb: "Grab and go from the freezer.",
       color: "#9bc7ff",
       icon: "snow",
+      image: "/products/wod-frozen.webp",
     },
     {
       slug: "everyday-essentials",
@@ -173,6 +181,7 @@ export const worldOfDiscounts = {
       blurb: "The things you came in for.",
       color: "#f1a85a",
       icon: "bag",
+      image: "/products/wod-everyday.webp",
     },
     {
       slug: "surprise-finds",
@@ -181,13 +190,14 @@ export const worldOfDiscounts = {
       blurb: "The unexpected good find.",
       color: "#ffdf5b",
       icon: "surprise",
+      image: "/products/wod-surprise.webp",
     },
   ] satisfies Category[],
   products: [
     {
       name: "Pantry staples",
       category: "Pantry",
-      image: "",
+      image: "/products/wod-pantry.webp",
       price: "PRICE IN STORE",
       badge: "AISLE FIND",
       availability: "Ask the team what’s in today",
@@ -197,7 +207,7 @@ export const worldOfDiscounts = {
     {
       name: "Snack run",
       category: "Snacks",
-      image: "",
+      image: "/products/wod-snacks.webp",
       price: "PRICE IN STORE",
       badge: "QUICK GRAB",
       availability: "Browse the snack aisle",
@@ -207,7 +217,7 @@ export const worldOfDiscounts = {
     {
       name: "Drinks fridge",
       category: "Drinks",
-      image: "",
+      image: "/products/wod-drink.webp",
       price: "PRICE IN STORE",
       badge: "COLD FIND",
       availability: "See what’s chilled today",
@@ -217,7 +227,7 @@ export const worldOfDiscounts = {
     {
       name: "Sweet shelf",
       category: "Confectionery",
-      image: "",
+      image: "/products/wod-chocolate.webp",
       price: "PRICE IN STORE",
       badge: "TREAT",
       availability: "Selection changes in store",
@@ -227,7 +237,7 @@ export const worldOfDiscounts = {
     {
       name: "Home helpers",
       category: "Household",
-      image: "",
+      image: "/products/wod-clean.webp",
       price: "PRICE IN STORE",
       badge: "USEFUL",
       availability: "Ask if you can’t see it",
@@ -237,7 +247,7 @@ export const worldOfDiscounts = {
     {
       name: "Care corner",
       category: "Personal Care",
-      image: "",
+      image: "/products/wod-care.webp",
       price: "PRICE IN STORE",
       badge: "DAILY",
       availability: "Everyday care, in person",
@@ -247,7 +257,7 @@ export const worldOfDiscounts = {
     {
       name: "Freezer finds",
       category: "Frozen",
-      image: "",
+      image: "/products/wod-frozen.webp",
       price: "PRICE IN STORE",
       badge: "CHILLED",
       availability: "Check the freezer in store",
@@ -257,7 +267,7 @@ export const worldOfDiscounts = {
     {
       name: "The usuals",
       category: "Everyday Essentials",
-      image: "",
+      image: "/products/wod-everyday.webp",
       price: "PRICE IN STORE",
       badge: "ESSENTIAL",
       availability: "The reason you popped in",
@@ -267,7 +277,7 @@ export const worldOfDiscounts = {
     {
       name: "Unexpected find",
       category: "Surprise Finds",
-      image: "",
+      image: "/products/wod-surprise.webp",
       price: "COMING SOON",
       badge: "LOOK OUT",
       availability: "The range moves — come have a look",

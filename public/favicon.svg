@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#FFE14A"/>
+  <path d="M10 18h44v28H10z" fill="#E31837"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Impact, sans-serif" font-size="16" fill="#FFF8EA">WOD</text>
+</svg>
