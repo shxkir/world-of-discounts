@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #11120e;
+  --color-cream: #f6efe2;
+  --color-lime: #d8ff3e;
+  --color-coral: #ff5a3c;
+  --color-sky: #7fd4ea;
+  --color-banana: #ffd84d;
+  --color-grape: #cc9af2;
+  --font-display: var(--font-outfit), "Avenir Next", Arial, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-coral);
+  outline-offset: 3px;
+}
+
+.noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+
+.display-title {
+  letter-spacing: -0.085em;
+  line-height: 0.78;
+  font-weight: 900;
+}
+
+.display-title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+}
+
+.shelf-shadow {
+  box-shadow: 5px 6px 0 #11120e;
+}
+
+.ticket-shadow {
+  box-shadow: 4px 4px 0 #11120e;
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+.spin-slow {
+  animation: spin 16s linear infinite;
+}
+
+.bob {
+  animation: bob 2.4s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bob {
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .spin-slow,
+  .bob,
+  .hero-orbit,
+  .hero-float {
+    animation: none !important;
+  }
+}
